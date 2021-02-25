@@ -25,7 +25,7 @@ router.post('/registrar-ejercicio', (req, res) => {
     });
 });
 
-router.get('listar-ejercicios', (req, res) => {
+router.get('/listar-ejercicios', (req, res) => {
     Ejercicio.find((err, lista_ejercicios) => {
         if (err) {
             res.json({
